@@ -1,0 +1,66 @@
+.pane {
+    -fx-background-color: linear-gradient(#CCC, #FFF);
+    -fx-effect: innershadow(gaussian, #FFF, 10, 0, 0, 0);
+}
+
+.component-basic {
+    -fx-font-weight: bold;
+    -fx-background-color: linear-gradient(#2b88d9, #3b679e);
+    -fx-text-fill: #FFF;
+    -fx-font-size: 16;
+    -fx-cursor: hand;
+}
+.component-basic:hover { -fx-background-color: linear-gradient(#6db3f2, #1e69de); }
+.component-basic:focused { -fx-background-color: #00cc99 }
+
+.component-basic-simple { 
+    -fx-background-color: #666; 
+    -fx-cursor: hand;
+} 
+.component-basic-simple:hover { -fx-background-color: #00cc99 }
+.component-basic-simple:pressed { -fx-background-color: linear-gradient(#6db3f2, #1e69de); }
+
+.item-basic-simple { -fx-background-color: #00cc99 }
+.item-basic-file { -fx-background-color: linear-gradient(#2b88d9, #3b679e); }
+
+
+.cockpit-chat {
+    -fx-background-color: linear-gradient(#6db3f2, #1e69de);
+    -fx-cursor: hand;
+}
+
+.cockpit-ftp {
+    -fx-background-color: linear-gradient(#ff6363, #ff1616);
+    -fx-cursor: hand;
+}
+
+.cockpit-disabled {
+    -fx-background-color: #CCC;
+}
+
+.close-icon:hover {
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, #000, 5, 0, 0, 0);
+}
+
+.font-basic {
+    -fx-text-fill: #999;
+    -fx-font-weight: bold;    
+}
+.title-principal {
+   -fx-text-fill: #FFF;
+   -fx-effect: dropshadow(gaussian, #666, 10, 0, 0, 0);
+}
+
+.title-from-pane { 
+    -fx-text-fill: #FFF; 
+    -fx-effect: dropshadow(gaussian, #000, 5, 0, 0, 0);
+}
+.title-size { -fx-font-size: 36; }
+.sub-title-size { -fx-font-size: 22; }
+.text-size { -fx-font-size: 16; }
+
+.not-empty {
+    -fx-background-color: #ffd9d9;
+    -fx-border-color: #ff3366;
+}

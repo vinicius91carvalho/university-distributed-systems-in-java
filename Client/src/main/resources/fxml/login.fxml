@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="270.0" styleClass="pane" stylesheets="@../styles/styles.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.unifieo.client.view.LoginController">
+   <children>
+      <Label layoutX="79.0" layoutY="36.0" text="LOGIN">
+         <styleClass>
+            <String fx:value="title-size" />
+            <String fx:value="title-principal" />
+            <String fx:value="font-basic" />
+         </styleClass>
+      </Label>
+      <TextField fx:id="txtLogin" layoutX="23.0" layoutY="111.0" prefHeight="33.0" prefWidth="225.0" styleClass="font-basic" />
+      <PasswordField fx:id="pwdPassword" layoutX="23.0" layoutY="158.0" prefHeight="33.0" prefWidth="225.0" styleClass="font-basic" />
+      <Button fx:id="btnLogin" layoutX="23.0" layoutY="216.0" mnemonicParsing="false" onAction="#login" prefHeight="45.0" prefWidth="225.0" styleClass="component-basic" text="Entrar" />
+      <Button fx:id="btnRegister" layoutX="22.0" layoutY="269.0" mnemonicParsing="false" onAction="#register" prefHeight="45.0" prefWidth="225.0" text="Cadastro">
+         <styleClass>
+            <String fx:value="component-basic" />
+            <String fx:value="component-basic-simple" />
+         </styleClass></Button>
+      <ImageView fitHeight="33.0" fitWidth="29.0" layoutX="232.0" layoutY="7.0" onMouseClicked="#exit" pickOnBounds="true" preserveRatio="true" styleClass="close-icon">
+         <image>
+            <Image url="@../images/close.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

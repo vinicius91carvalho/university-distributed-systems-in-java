@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" styleClass="pane" stylesheets="@../styles/styles.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.unifieo.client.view.ChatController">
+   <children>
+      <ScrollPane fx:id="scrollPane" fitToHeight="true" fitToWidth="true" layoutX="14.0" layoutY="42.0" prefHeight="369.0" prefWidth="501.0">
+         <content>
+            <ListView fx:id="lstMessages" />
+         </content></ScrollPane>
+      <ListView fx:id="lstUsers" layoutX="525.0" layoutY="42.0" prefHeight="370.0" prefWidth="161.0" />
+      <TextField fx:id="txtMessage" layoutX="13.0" layoutY="419.0" prefHeight="29.0" prefWidth="674.0" styleClass="font-basic" />
+      <Button fx:id="btnSendFile" layoutX="13.0" layoutY="459.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="100.0" styleClass="font-basic" text="Enviar arquivo" />
+      <Label fx:id="lblPathFile" layoutX="126.0" layoutY="457.0" prefHeight="29.0" prefWidth="501.0" styleClass="font-basic" text="C:\Program Files (x86)\Google\Chrome\Application\38.0.2125.104\Extensions" />
+      <Pane prefHeight="30.0" prefWidth="700.0" styleClass="component-basic">
+         <children>
+            <Label layoutX="21.0" layoutY="4.0" styleClass="title-from-pane" text="Ch@t 1.0" />
+         </children></Pane>
+      <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="646.0" layoutY="454.0" onMouseClicked="#back" pickOnBounds="true" preserveRatio="true" styleClass="close-icon">
+         <image>
+            <Image url="@../images/back-icon.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

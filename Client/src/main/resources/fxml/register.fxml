@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="270.0" styleClass="pane" stylesheets="@../styles/styles.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.unifieo.client.view.RegisterController">
+   <children>
+      <TextField fx:id="txtLogin" layoutX="23.0" layoutY="91.0" prefHeight="33.0" prefWidth="225.0" styleClass="font-basic" />
+      <Button fx:id="btnRegister" layoutX="146.0" layoutY="291.0" mnemonicParsing="false" onAction="#register" prefHeight="45.0" prefWidth="102.0" styleClass="component-basic" text="Cadastro" />
+      <PasswordField fx:id="pwdPassword" layoutX="23.0" layoutY="166.0" prefHeight="33.0" prefWidth="225.0" styleClass="font-basic" />
+      <Pane prefHeight="45.0" prefWidth="270.0" styleClass="component-basic">
+         <children>
+            <Label layoutX="26.0" layoutY="7.0" text="Resgitro">
+               <styleClass>
+                  <String fx:value="sub-title-size" />
+                  <String fx:value="title-from-pane" />
+               </styleClass></Label>
+         </children>
+      </Pane>
+      <PasswordField fx:id="pwdConfirmPassword" layoutX="23.0" layoutY="211.0" prefHeight="33.0" prefWidth="225.0" styleClass="font-basic" />
+      <Button fx:id="btnBack" layoutX="23.0" layoutY="291.0" mnemonicParsing="false" onAction="#back" prefHeight="45.0" prefWidth="102.0" text="Voltar">
+         <styleClass>
+            <String fx:value="component-basic" />
+            <String fx:value="component-basic-simple" />
+         </styleClass></Button>
+         <ImageView onMouseClicked="#exit" fitHeight="33.0" fitWidth="29.0" layoutX="232.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true" styleClass="close-icon">
+         <image>
+            <Image url="@../images/close.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
